@@ -3,6 +3,7 @@ abstract: 'Scanner for L<Text::Xslate> style file'
 author:
   - 'Kazuhiro Osawa, Tokuhiro Matsuno <tokuhirom@gmail.com>'
 build_requires:
+  File::Temp: 0
   Test::More: 0.98
 configure_requires:
   CPAN::Meta: 0
@@ -28,13 +29,14 @@ no_index:
 provides:
   Localizer::Scanner::Xslate:
     file: lib/Localizer/Scanner/Xslate.pm
-    version: 0.01
+    version: 0.05
 requires:
-  Localizer: 0
+  Class::Accessor::Lite: 0.05
+  Localizer::Dictionary: 0
   Text::Xslate: 0
   perl: 5.008005
 resources:
   bugtracker: https://github.com/tokuhirom/Localizer-Scanner-Xslate/issues
   homepage: https://github.com/tokuhirom/Localizer-Scanner-Xslate
   repository: git://github.com/tokuhirom/Localizer-Scanner-Xslate.git
-version: 0.01
+version: 0.05

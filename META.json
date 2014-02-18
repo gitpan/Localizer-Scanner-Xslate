@@ -43,13 +43,15 @@
       },
       "runtime" : {
          "requires" : {
-            "Localizer" : "0",
+            "Class::Accessor::Lite" : "0.05",
+            "Localizer::Dictionary" : "0",
             "Text::Xslate" : "0",
             "perl" : "5.008005"
          }
       },
       "test" : {
          "requires" : {
+            "File::Temp" : "0",
             "Test::More" : "0.98"
          }
       }
@@ -57,7 +59,7 @@
    "provides" : {
       "Localizer::Scanner::Xslate" : {
          "file" : "lib/Localizer/Scanner/Xslate.pm",
-         "version" : "0.01"
+         "version" : "0.05"
       }
    },
    "release_status" : "stable",
@@ -71,5 +73,5 @@
          "web" : "https://github.com/tokuhirom/Localizer-Scanner-Xslate"
       }
    },
-   "version" : "0.01"
+   "version" : "0.05"
 }
